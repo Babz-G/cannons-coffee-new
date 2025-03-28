@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font: poppins;
+  --white: #ffffff;
+  --black: #000000;
+  --darkblue: #06327d;
+  --blue: #2b70e4;
+  --green: #209d5c;
+  --yellow: #ffd034;
+  --lightblue: #cadbf8;
+  --h1: 3rem;
+  --h2: 2.5rem;
+  --h3: 1.75rem;
+  --stroke: 10px;
+}
+
+body {
+  background: var(--darkblue);
+  font-family: var(--font);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 1rem;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+header {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: var(--darkblue);
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  text-transform: uppercase;
+  /* gap: 2rem; */
+}
+.logo {
+  text-align: center;
+  /* padding: 0.4rem;
+  margin: 0; */
+  /* display: flex; */
+  /* flex-flow: row wrap;
+  justify-content: space-between; */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: space-between; */
+}
+nav a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+h1 {
+  display: inline-block;
+  /* align-items: left; */
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  background-color: var(--white);
+  border-top: 5px solid var(--yellow);
+  gap: 1rem;
+  align-items: center;
+  text-align: left;
+  background-color: white;
+}
+.child1 {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+.child2 {
+  padding: 1rem;
+}
+.container2 {
+  background-color: var(--lightblue);
+  grid-template-columns: 1fr;
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 0;
+  border-bottom: 5px solid var(--yellow);
+  text-align: left;
+}
+.containerlatte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  /* background-color: var(--white); */
+  border-top: 5px solid var(--yellow);
+  border-bottom: 5px solid var(--yellow);
+  gap: 1rem;
+  align-items: center;
+  text-align: left;
+  background-color: white;
+}
+/* .firstphoto {
+  border-radius= 0; */
+
+.title {
+  text-align: left;
+  padding: 1rem;
+  background-color: var(--lightblue);
+  font-weight: 300;
+  color: black;
+}
+.button1 {
+  background-color: var(--green);
+  display: inline-block;
+  border-radius: 10px;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem;
+  text-transform: uppercase;
+}
+.button {
+  background-color: var(--darkblue);
+  display: inline-block;
+  border-radius: 10px;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem;
+  text-transform: uppercase;
+}
+.firstphoto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  text-align: left;
+  background-color: white;
+  border-radius: 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.intro {
+  /* margin-bottom: 4rem; */
+  text-align: center;
+}
+main {
+  /* margin-top: 3rem; */
+  text-align: center;
+}
+.child {
+  text-align: left;
+  padding: 1rem;
+}
+footer {
+  margin: 0;
+  background-color: var(--darkblue);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--white);
+  border-top: 5px solid var(--yellow);
+}
+
+/* @media (min-width: 500px) {
+  .child {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 2rem; */
+/* @media (min-width: 649px) {
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+  header {
+    justify-content: center;
+    border: 2px solid red; */
+
+@media (min-width: 650px) {
+  .container2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  header {
+    justify-content: center;
+  }
+}
+@media (min-width: 1000px) {
+  .container2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  header {
+    justify-content: space-between;
+  }
+}
