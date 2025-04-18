@@ -27,26 +27,23 @@
                 >About</a
               >
             </li>
-
-            <li>
-              <!-- <a href="mailto:barbaramgaynor@gmail.com" target="_blank"
-                >Contact</a
-              > -->
-            </li>
-
-            <li>
-              <a href="cart.html" target="_blank">Cart</a>
-            </li>
             <li>
               <a href="contact.html" target="_blank">Contact</a>
+            </li>
+            <li>
+              <a href="cart.html" target="_blank">Cart</a>
             </li>
           </ul>
         </nav>
       </header>
+
       <main>
         <div class="form-container">
+          <!-- <h1 class="shadow">✨Welcome!✨</h1>
+            <h3 class="gray">Please sign-in with your email</h3> -->
           <form id="placeOrder">
-            <h2 class="whitecontact">✨Contact Cannon's Coffee✨</h2>
+            <div class="h1center">✨☕ Welcome! ☕✨</div>
+            <div class="h3center">Please sign-in with your email</div>
             <label for="persons-name">Name:</label>
             <input
               type="text"
@@ -65,50 +62,21 @@
               required
             />
             <br /><br />
-            <label for="phone">Phone Number:</label>
+            <label for="password">Password:</label>
             <input
-              type="tel"
-              id="phone"
-              name="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="Your phone #"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Your password here"
               required
             />
             <br /><br />
-            <label for="comment">Comment:</label><br />
-            <input
-              type="textarea"
-              id="comment"
-              name="comment"
-              placeholder="Your comment here"
-              required
-            />
-            <br /><br />
-            <label for="option">Pick your poison:</label>
-            <select id="option" name="option" required>
-              <option value="">--Choose one option--</option>
-              <option value="Cold Brew">Cold Brew</option>
-              <option value="Dirty Chai">Dirty Chai</option>
-              <option value="Caramel Macchiato">Caramel Macchiato</option>
-            </select>
-            <br /><br />
-            <fieldset>
-              <legend>Why are you visiting us today:</legend>
-              <div>
-                <input type="radio" id="yes" name="answer" value="yes" />
-                <label for="yes">To buy coffee?</label>
-
-                <input type="radio" id="no" name="answer" value="no" />
-                <label for="no">To seek employment?</label>
-              </div>
-            </fieldset>
-            <br />
-            <br />
             <button type="sumbit">Submit</button>
           </form>
         </div>
         <div class="containerStyle"></div>
       </main>
+
       <footer>
         <img
           src=" https://assets.codepen.io/296057/logo-footer.png"
@@ -120,6 +88,6 @@
         </p>
       </footer>
     </div>
-    <script src="js/custom.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

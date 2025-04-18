@@ -14,12 +14,9 @@ function onSubmit(e) {
 
   let name = dataObject.yourname;
   let email = dataObject.user_email;
-  let phone = dataObject.phone;
-  let comments = dataObject.comment;
-  let option = dataObject.option;
-  let answer = dataObject.answer;
+  let password = dataObject.password;
 
-  let message = `Thank you! ${name} ${email} ${phone} ${comments} ${option} ${answer}`;
+  let message = `Welcome, ${name}! You are logged in!”`;
 
   console.log("first message to user", message);
 
